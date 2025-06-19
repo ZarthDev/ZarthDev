@@ -45,7 +45,7 @@
 
 ## 📫 Onde me encontrar?
 
-- 📸 [Instagram (opcional)](https://www.instagram.com/arthdev_)
+- 📸 [Instagram](https://www.instagram.com/arthdev_)
 - ✉️ Fala comigo por aqui no GitHub mesmo!
 
 ---
