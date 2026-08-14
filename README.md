@@ -1,6 +1,6 @@
 # 👋 Olá! Eu sou o Arthur Martins
 
-🎓 Tenho 18 anos e sou um desenvolvedor **fullstack iniciante**, apaixonado por aprender, criar e crescer!
+🎓 Tenho 19 anos e sou um desenvolvedor **fullstack**, apaixonado por aprender, criar e crescer!
 
 ---
 
