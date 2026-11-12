@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 300" width="1200" height="300" fill="none" role="img" aria-label="Arthur Martins — Infraestrutura de TI x Full Stack">
+  <defs>
+    <linearGradient id="wine" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#5E0715"/>
+      <stop offset="0.5" stop-color="#8E0E22"/>
+      <stop offset="1" stop-color="#C31329"/>
+    </linearGradient>
+    <linearGradient id="wineText" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#E8364C"/>
+      <stop offset="0.55" stop-color="#C31329"/>
+      <stop offset="1" stop-color="#8E0E22"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-0.35 0;0.35 0;-0.35 0" dur="7s" repeatCount="indefinite" calcMode="spline" keyTimes="0;0.5;1" keySplines="0.45 0 0.55 1;0.45 0 0.55 1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#E8364C" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#E8364C" stop-opacity="0"/>
+    </radialGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#E8364C" stroke-opacity="0.06" stroke-width="1"/>
+    </pattern>
+    <filter id="soft" x="-40%" y="-80%" width="180%" height="260%">
+      <feGaussianBlur stdDeviation="9"/>
+    </filter>
+  </defs>
+
+  <!-- fundo -->
+  <rect width="1200" height="300" rx="18" fill="#0A0A0A"/>
+  <rect width="1200" height="300" rx="18" fill="url(#grid)"/>
+  <ellipse cx="600" cy="140" rx="520" ry="190" fill="url(#glow)">
+    <animate attributeName="opacity" values="0.75;1;0.75" dur="5s" repeatCount="indefinite"/>
+  </ellipse>
+
+  <!-- barra superior com brilho correndo -->
+  <rect x="0" y="0" width="1200" height="4" fill="url(#wine)"/>
+  <rect x="-240" y="0" width="240" height="4" fill="#F6F4F2" opacity="0.5">
+    <animate attributeName="x" values="-240;1200" dur="4.5s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- esquerda: nós de rede (infraestrutura) -->
+  <g stroke="#C31329" stroke-width="1.6" opacity="0.8">
+    <line x1="70" y1="90" x2="140" y2="150"/>
+    <line x1="140" y1="150" x2="70" y2="210"/>
+    <line x1="140" y1="150" x2="210" y2="110"/>
+    <line x1="140" y1="150" x2="210" y2="195"/>
+  </g>
+  <g fill="#E8364C">
+    <circle cx="70" cy="90" r="6"><animate attributeName="r" values="5;7;5" dur="2.4s" repeatCount="indefinite"/></circle>
+    <circle cx="70" cy="210" r="6"><animate attributeName="r" values="7;5;7" dur="2.8s" repeatCount="indefinite"/></circle>
+    <circle cx="140" cy="150" r="8" fill="#C31329"><animate attributeName="r" values="7;9;7" dur="2.2s" repeatCount="indefinite"/></circle>
+    <circle cx="210" cy="110" r="5"><animate attributeName="opacity" values="1;0.4;1" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="210" cy="195" r="5"><animate attributeName="opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/></circle>
+  </g>
+
+  <!-- direita: pixels dissolvendo (o "pixel") -->
+  <g fill="#C31329">
+    <rect x="1000" y="92"  width="14" height="14" rx="2"><animate attributeName="opacity" values="0.2;1;0.2" dur="3.1s" repeatCount="indefinite"/></rect>
+    <rect x="1022" y="92"  width="14" height="14" rx="2" fill="#E8364C"><animate attributeName="opacity" values="1;0.3;1" dur="2.6s" repeatCount="indefinite"/></rect>
+    <rect x="1044" y="92"  width="14" height="14" rx="2" opacity="0.5"><animate attributeName="opacity" values="0.5;1;0.5" dur="3.4s" repeatCount="indefinite"/></rect>
+    <rect x="1000" y="114" width="14" height="14" rx="2" opacity="0.6"><animate attributeName="opacity" values="0.6;0.2;0.6" dur="2.9s" repeatCount="indefinite"/></rect>
+    <rect x="1022" y="114" width="14" height="14" rx="2"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.6s" repeatCount="indefinite"/></rect>
+    <rect x="1044" y="114" width="14" height="14" rx="2" fill="#E8364C" opacity="0.8"><animate attributeName="opacity" values="0.8;0.2;0.8" dur="2.4s" repeatCount="indefinite"/></rect>
+    <rect x="1066" y="114" width="14" height="14" rx="2" opacity="0.35"><animate attributeName="opacity" values="0.35;0.9;0.35" dur="3.2s" repeatCount="indefinite"/></rect>
+    <rect x="1022" y="136" width="14" height="14" rx="2" opacity="0.4"><animate attributeName="opacity" values="0.4;1;0.4" dur="2.7s" repeatCount="indefinite"/></rect>
+    <rect x="1044" y="136" width="14" height="14" rx="2" opacity="0.7"><animate attributeName="opacity" values="0.7;0.25;0.7" dur="3.8s" repeatCount="indefinite"/></rect>
+  </g>
+
+  <!-- nome -->
+  <text x="600" y="150" text-anchor="middle" font-family="'Archivo','Segoe UI',Helvetica,Arial,sans-serif" font-size="74" font-weight="800" letter-spacing="2" fill="#C31329" opacity="0.5" filter="url(#soft)">ARTHUR MARTINS</text>
+  <text x="600" y="150" text-anchor="middle" font-family="'Archivo','Segoe UI',Helvetica,Arial,sans-serif" font-size="74" font-weight="800" letter-spacing="2" fill="url(#wineText)">ARTHUR MARTINS</text>
+
+  <!-- subtítulo -->
+  <text x="600" y="192" text-anchor="middle" font-family="'Archivo','Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="600" letter-spacing="7" fill="#9A9298">INFRAESTRUTURA DE TI &#160;&#160;&#215;&#160;&#160; FULL STACK</text>
+
+  <!-- tagline mono + cursor -->
+  <text x="516" y="240" font-family="'JetBrains Mono','Courier New',monospace" font-size="15" fill="#F6F4F2" opacity="0.85">&gt; da infraestrutura ao pixel, cada camada importa</text>
+  <rect x="672" y="229" width="9" height="15" fill="#E8364C">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/>
+  </rect>
+
+  <!-- linha inferior -->
+  <rect x="0" y="296" width="1200" height="4" fill="url(#wine)" opacity="0.8"/>
+</svg>
